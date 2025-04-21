@@ -1,0 +1,284 @@
+﻿
+@{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/OrbitLayout.cshtml";
+}
+
+<h2 class="mb-2 lh-sm">Employee</h2>
+
+<div class="mt-4">
+    <div class="row g-4">
+        <div class="col-12 col-xl-6">
+            <div class="mb-2">
+                <div class="card shadow-none border">
+                    <div class="card-header p-3 border-bottom bg-body">
+                        <div class="row g-3 justify-content-between align-items-center">
+                            <div class="col-12 col-md">
+                                <h4 class="text-body mb-0">Personal Details</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="p-4 code-to-copy">
+                            <div class="row">
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Employee Name</label>
+                                        <input type="hidden" class="form-control" id="HID" value="0">
+                                        <input class="form-control" id="EmployeeName" type="text" placeholder="Enter Name">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Mobile No.</label>
+                                        <input class="form-control" id="MobileNo" type="text" placeholder="Enter Mobile no.">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Date of Brith</label>
+                                        <input class="form-control datetimepicker" id="DOB" type="text" placeholder="DD/MM/YYYY" data-options='{"disableMobile":true,"dateFormat":"d/m/Y"}' />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Gender</label>
+                                        <select class="form-select" id="Gender">
+                                            <option>Select Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Address</label>
+                                        <textarea class="form-control" id="Address" rows="3" placeholder="Enter Empolyee Address"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="email">Email address</label>
+                                        <div class="form-icon-container">
+                                            <input class="form-control form-icon-input" id="Email" type="email" placeholder="name@example.com" />
+                                            <span data-feather="user" style="margin-top: -65px; margin-left: 10px;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="password">Password</label>
+                                        <div class="form-icon-container" data-password="data-password">
+                                            <input class="form-control form-icon-input pe-6" id="Password" type="password" placeholder="Password" data-password-input="data-password-input" />
+                                            <span data-feather="key" style="margin-top: -65px; margin-left: 10px;"></span>
+                                            <button class="btn px-3 py-0 h-100 position-absolute top-0 end-0 fs-7 text-body-tertiary" data-password-toggle="data-password-toggle">
+                                                <span data-feather="eye" style="margin-top: -28px; margin-left: 10px;" class="show"></span>
+                                                <span data-feather="eye-off" style="margin-top: -20px; margin-left: 10px;" class="hide"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-6">
+            <div class="mb-5">
+                <div class="card shadow-none border">
+                    <div class="card-header p-3 border-bottom bg-body">
+                        <div class="row g-3 justify-content-between align-items-center">
+                            <div class="col-12 col-md">
+                                <h4 class="text-body mb-0">Document</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="p-4 code-to-copy">
+                            <div class="mb-3">
+                                <label class="form-label" for="exampleFormControlInput">Expense Type</label>
+                                <input class="form-control" id="ExpenseType" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-6">
+            <div class="mb-2">
+                <div class="card shadow-none border">
+                    <div class="card-header p-3 border-bottom bg-body">
+                        <div class="row g-3 justify-content-between align-items-center">
+                            <div class="col-12 col-md">
+                                <h4 class="text-body mb-0">Company Details</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="p-4 code-to-copy">
+                            <div class="row">
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Employee ID</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Employee Id">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Branch</label>
+                                        <select class="form-select" id="Branch"></select>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Department</label>
+                                        <select class="form-select" id="Department"></select>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Designation</label>
+                                        <select class="form-select" id="Designation"></select>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">joining Date of company</label>
+                                        <input class="form-control datetimepicker" id="DOB" type="text" placeholder="DD/MM/YYYY" data-options='{"disableMobile":true,"dateFormat":"d/m/Y"}' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-xl-6">
+            <div class="mb-5">
+                <div class="card shadow-none border">
+                    <div class="card-header p-3 border-bottom bg-body">
+                        <div class="row g-3 justify-content-between align-items-center">
+                            <div class="col-12 col-md">
+                                <h4 class="text-body mb-0">Bank Account Details</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="p-4 code-to-copy">
+                            <div class="row">
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Account Holder Name</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Account Holder Name">
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Account No.</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Account No.">
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Bank Name</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Bank Name">
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Bank Identifier Code</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Bank Identifier Code">
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Branch Location</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Branch Location">
+                                    </div>
+                                </div>
+                                <div class=" col-6 col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput">Tax Payer ID</label>
+                                        <input class="form-control" id="EmployeeID" type="text" placeholder="Enter Tax Payer Id">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-12" style="margin-top: -20px; margin-bottom: 20px;">
+            <button id="SaveUpdate" class="btn btn-sm btn-subtle-primary">Add</button>
+            <a href="/Orbit/Employee" class="btn btn-sm btn-subtle-danger">cancel</a>
+        </div>
+    </div>
+
+    <div class="col-12 col-xl-12">
+        <div class="card shadow-none border mb-3">
+            <div class="card-header p-3 border-bottom bg-body">
+                <div class="row g-3 justify-content-between align-items-end">
+                    <div class="col-12 col-md">
+                        <h4 class="text-body mb-0">Employee Details</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="p-4 code-to-copy">
+                    <div id="tableExample" data-list='{"valueNames":["name","email","age"],"page":6,"pagination":true}'>
+                        <div class="search-box mb-3 mx-auto">
+                            <form class="position-relative">
+                                <input class="form-control search-input search form-control-sm" type="search" placeholder="Search" aria-label="Search" />
+                                <span class="fas fa-search search-box-icon"></span>
+                            </form>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-sm fs-9 mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Sr.No</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Name</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Email</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Branch</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Department</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Designation</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="name">Date of joining</th>
+                                        <th class="sort border-top border-translucent ps-3" data-sort="action">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list">
+                                    <tr>
+                                        <td class="align-middle ps-3 name">1</td>
+                                        <td class="align-middle ps-3 name">jonh snow</td>
+                                        <td class="align-middle ps-3 name">jonh@snow.com</td>
+                                        <td class="align-middle ps-3 name">Branch</td>
+                                        <td class="align-middle ps-3 name">Department</td>
+                                        <td class="align-middle ps-3 name">Designation</td>
+                                        <td class="align-middle ps-3 name">13/03/2020</td>
+                                        <td class="align-middle ps-3 action">
+                                            <a onclick="EditExpenseType(data.ID)" class="btn btn-sm btn-subtle-info">
+                                                <span data-feather="edit-3"></span>
+                                            </a>
+                                            <a onclick="DeleteExpenseType(data.ID)" class="btn btn-sm btn-subtle-danger">
+                                                <span data-feather="trash-2"></span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <span class="d-none d-sm-inline-block" data-list-info="data-list-info"></span>
+                            <div class="d-flex">
+                                <button class="page-link" data-list-pagination="prev"><span class="fas fa-chevron-left"></span></button>
+                                <ul class="mb-0 pagination"></ul><button class="page-link pe-0" data-list-pagination="next"><span class="fas fa-chevron-right"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

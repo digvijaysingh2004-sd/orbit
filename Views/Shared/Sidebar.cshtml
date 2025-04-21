@@ -1,0 +1,546 @@
+﻿<nav class="navbar navbar-vertical navbar-expand-lg" style="display:none;">
+    <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+        <!-- scrollbar removed-->
+        <div class="navbar-vertical-content">
+            <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+                <li class="nav-item">
+                    <p class="navbar-vertical-label">hrm</p>
+                    <hr class="navbar-vertical-line" />
+                    <!-- parent pages-->
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#nv-travel-agency" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="home"></span></span><span class="nav-link-text">DashBoard</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-travel-agency">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Overview</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-indicator" href="#nv-trip" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-trip">
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-text">Report</span>
+                                        </div>
+                                    </a><!-- more inner pages-->
+                                    <div class="parent-wrapper">
+                                        <ul class="nav collapse parent" data-bs-parent="#travel-agency" id="nv-trip">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/homepage.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Income vs Expense</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/trip-details.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Monthly Attendence</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/checkout.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Leave</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/checkout.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Account Statement</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/checkout.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Payroll</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/checkout.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">TimeSheet</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#nv-CRM" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-CRM">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper">
+                                    <span class="fas fa-caret-right dropdown-indicator-icon"></span>
+                                </div>
+                                <span class="nav-link-icon">
+                                    <span data-feather="users"></span>
+                                </span>
+                                <span class="nav-link-text">Staff</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-CRM">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/crm/analytics.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Users</span></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/crm/deals.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Role</span></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/crm/deal-details.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Employee Profile</span></div>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Employee","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Employee</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#PayRoll" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-CRM">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper">
+                                    <span class="fas fa-caret-right dropdown-indicator-icon"></span>
+                                </div>
+                                <span class="nav-link-icon">
+                                    <span data-feather="file-text"></span>
+                                </span>
+                                <span class="nav-link-text">PayRoll</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="PayRoll">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/crm/analytics.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Set Salary</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/crm/deals.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">PaySlip</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#TimeSheet" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="clock"></span></span><span class="nav-link-text">TimeSheet</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="TimeSheet">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">TimeSheet</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Manage Leave</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-indicator" href="#Attendance" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-trip">
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-text">Attendance</span>
+                                        </div>
+                                    </a><!-- more inner pages-->
+                                    <div class="parent-wrapper">
+                                        <ul class="nav collapse parent" data-bs-parent="#travel-agency" id="Attendance">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/trip-details.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Marked Attendence</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="apps/travel-agency/trip/trip-details.html">
+                                                    <div class="d-flex align-items-center"><span class="nav-link-text">Bulk Attendence</span></div>
+                                                </a><!-- more inner pages-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#Performance" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="cpu"></span></span><span class="nav-link-text">Performance</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="Performance">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Indicator</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Appraisal</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Goal Tracking</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#finance" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="activity"></span></span><span class="nav-link-text">Finance</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="finance">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Account List</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Account Balance</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Payees</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Payers</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Deposit</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Expense</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Transfer Balance</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#hrsetup" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="user-plus"></span></span><span class="nav-link-text">HR Setup</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="hrsetup">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Award</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Transfer</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Resignation</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Trip</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Promotion</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Complaints</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Warning</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Termination</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Announcement</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Holidays","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Holidays</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#requriment" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="file-plus"></span></span><span class="nav-link-text">Requriment</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="requriment">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Jobs</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Job Create</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Job Application</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Job Candidate</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Job On-Borading</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Custom Question</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Interview Schedule</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="apps/travel-agency/landing.html">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Career</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link dropdown-indicator label-1" href="#hrmsetup" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-travel-agency">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="settings"></span></span><span class="nav-link-text">HRM System Setup</span>
+                            </div>
+                        </a>
+                        <div class="parent-wrapper label-1">
+                            <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="hrmsetup">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Branch","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Branch</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Department","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Department</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Designation","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Designation</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("LeaveType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Leave Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("GoalType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Goal Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("TrainingType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Training Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("AwardType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Award Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("TerminationType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Termination Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("PerformanceType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Performance Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("Competencies","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Competencies</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("ExpenseType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Expense Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("IncomeType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Income Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("PaymentType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Payment Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("ContractType","Orbit")">
+                                        <div class="d-flex align-items-center"><span class="nav-link-text">Contact Type</span></div>
+                                    </a><!-- more inner pages-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span data-feather="file-text"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Contracts</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span class="fs-8 lh-1 uil uil-ticket"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Ticket</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span data-feather="calendar"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Event</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span class="fs-8 lh-1 uil uil-meeting-board"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Meeting</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span data-feather="video"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Zoom Meeting</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span data-feather="sunset"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Assets</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span data-feather="file"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Document</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <span class="nav-link-icon">
+                                    <span class="fs-8 lh-1 uil uil-file-lock-alt"></span>
+                                </span>
+                                <span class="nav-link-text-wrapper">
+                                    <span class="nav-link-text">Company Policy</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar-vertical-footer"><button class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button></div>
+</nav>
+

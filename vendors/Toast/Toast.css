@@ -1,0 +1,78 @@
+﻿.toast {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    background-color: #d9fbd0;
+    color: #1c6c09;
+    padding: 12px 20px;
+    border: 1px solid #90d67f;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    transition: right 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+    opacity: 0;
+}
+
+.toast.show {
+    right: 20px;
+    opacity: 1;
+}
+
+.toast.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.toast.danger {
+    background: linear-gradient(135deg, #ffe0db, #ffc9c2);
+    color: #b81800;
+    border: 2px solid #f48270;
+    font-weight: bold;
+}
+
+.toast.warning {
+    background: linear-gradient(135deg, #fff3cd, #ffe8a1);
+    color: #856404;
+    border: 2px solid #ffdd75;
+    font-weight: bold;
+}
+
+.toast.success {
+    background: linear-gradient(135deg, #d4edda, #b8e0c2);
+    color: #155724;
+    border: 3px solid #a3d9a5;
+    font-weight: bold;
+}
+
+/* Icons */
+.toast span#toastIcon {
+    font-size: 20px;
+}
+
+/* Close button */
+.close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Progress bar */
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform-origin: left;
+    transition: width 3s linear;
+}
